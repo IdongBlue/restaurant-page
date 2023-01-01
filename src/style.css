@@ -1,0 +1,186 @@
+@font-face {
+    font-family: 'MyFont';
+    src: url('./onepiecefont.ttf') format('TrueType');
+    font-style: normal;
+}
+
+body, html {
+    height: 100%;
+  }
+
+body {
+    margin: 0;
+	padding: 0;
+	border: 0;
+	font-size: 100%;
+	font: inherit;
+	vertical-align: baseline;
+    line-height: 1;
+    font-family: 'MyFont';
+}
+
+#navbar {
+    display: flex;
+    justify-content: space-around;
+    flex-wrap: nowrap;
+    align-items: center;
+    background-color: darkblue;
+    height: 100px;
+    color: white;
+}
+
+#tabs {
+    display: flex;
+    font-size: 1.7em;
+    margin-right: 50px;
+    text-align: center;
+}
+
+.tab {
+    cursor: pointer;
+}
+
+.tab:hover {
+    color: yellow;
+}
+
+.tab.active {
+    color: yellow;
+}
+
+#name {
+    font-size: 3.3em;
+    margin-left: 100px;
+    text-align: center;
+}
+
+#menu {
+    margin-right: 50px;
+    margin-left: 50px;
+}
+
+[data-tab-content] {
+    display: none;
+}
+
+.active[data-tab-content] {
+    display: block;
+}
+
+#home_page {
+    background-image: url('./fruit.webp');
+    height: 90vh;
+    background-position: center;
+    background-repeat: no-repeat;
+    background-size: cover;
+}
+
+#home_container {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    text-align: center;
+    color: black;
+    overflow-y: scroll;
+    box-sizing: border-box;
+}
+
+#first {
+    width: 65%;
+    font-size: 4.5em;
+    margin-top: 110px;
+    margin-bottom: 30px;
+    background-color: yellow;
+    border: solid 4px black;
+    border-radius: 8px;
+    padding: 15px;
+
+}
+
+#second {
+    font-size: 3em;
+    margin-bottom: 50px;
+    background-color: pink;
+    border: solid black;
+    padding: 15px;
+    border-radius: 8px;
+}
+
+#menu_content {
+    height: 85vh;
+    width: 50vw;
+    overflow-y: scroll;
+    margin-left: auto;
+    margin-right: auto;
+    padding-top: 20px;
+}
+
+#about_tab {
+    height: 100%
+}
+
+#about_container {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    height: 100%;
+}
+
+#question {
+    margin-top: 80px;
+    margin-bottom: 80px;
+    background-color: lightgreen;
+    box-sizing: border-box;
+    border: solid black;
+    border-radius: 8px;
+    padding: 15px;
+    font-size: 3em;
+}
+
+#answer {
+    border:solid black;
+    background-color: yellow;
+    padding: 15px;
+    box-sizing: border-box;
+    border-radius: 8px;
+    color: black;
+    font-size: 2.2em;
+    width: 50%;
+}
+
+button {
+  background: #FF4742;
+  border: 1px solid #FF4742;
+  border-radius: 6px;
+  box-shadow: rgba(0, 0, 0, 0.1) 1px 2px 4px;
+  box-sizing: border-box;
+  color: #FFFFFF;
+  cursor: pointer;
+  display: inline-block;
+  font-family: nunito,roboto,proxima-nova,"proxima nova",sans-serif;
+  font-size: 16px;
+  font-weight: 800;
+  line-height: 16px;
+  min-height: 40px;
+  outline: 0;
+  padding: 12px 14px;
+  text-align: center;
+  text-rendering: geometricprecision;
+  text-transform: none;
+  user-select: none;
+  -webkit-user-select: none;
+  touch-action: manipulation;
+  vertical-align: middle;
+}
+
+button:hover,
+button:active {
+  background-color: green;
+  background-position: 0 0;
+  color: black;
+  border-color: green;
+}
+
+button:active {
+  opacity: .5;
+}
